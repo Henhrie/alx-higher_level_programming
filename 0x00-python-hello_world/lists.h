@@ -1,3 +1,6 @@
+#ifndef LISTS_H
+#define LISTS_H
+
 #include "lists.h"
 
 /**
@@ -25,8 +28,6 @@ return (1);
 return (0);
 }
 
-#ifndef LISTS_H
-#define LISTS_H
 
 #include <stdlib.h>
 
