@@ -1,6 +1,7 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -29,7 +30,6 @@ return (0);
 }
 
 
-#include <stdlib.h>
 
 /**
  * struct listint_s: singly linked list
