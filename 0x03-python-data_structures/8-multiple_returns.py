@@ -11,7 +11,7 @@ Parameters:
 Returns:
 
 tuple: A tuple containing the length of the sentence and the first character
-of the sentence.
+    of the sentence.
 """
     my_tuple = ()
     if len(sentence) == 0:
