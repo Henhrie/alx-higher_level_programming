@@ -3,7 +3,7 @@ def print_matrix_integer(matrix=[[]]):
     """
     Prints a matrix of integers.
     Parameters:
-        matrix (List[List[int]]): The matrix to be printed.    
+        matrix (List[List[int]]): The matrix to be printed.
     Returns:
         None
   """
