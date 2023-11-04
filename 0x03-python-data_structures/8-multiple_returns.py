@@ -1,19 +1,21 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
- """
-    Calculate the length of a given sentence and return a tuple containing
-    the length and the first character of the sentence.
-    Parameters:
-    sentence (str): The sentence to calculate the length of.
-    Returns:
-    tuple: A tuple containing two elements:
-           - sen_len (int): The length of the sentence.
-           - first_char (str): The first character of the sentence.
-    """
-    if not sentence:
-        sentence = None
-    if sentence:
-        sen_len = len(sentence)
+
+"""
+Calculate the length of the sentence and return a tuple containing the length of the
+    sentence and the first character of the sentence.
+
+Parameters:
+    sentence (str): The input sentence.
+
+Returns:
+
+tuple: A tuple containing the length of the sentence and the first character
+of the sentence.
+"""
+    my_tuple = ()
+    if len(sentence) == 0:
+        my_tuple = 0, "None"
     else:
-        sen_len = 0
-    return (sen_len, sentence if not sentence else sentence[:1])
+        my_tuple = len(sentence), sentence[0]
+    return my_tuple
