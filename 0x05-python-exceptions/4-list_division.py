@@ -4,12 +4,10 @@
 def list_division(my_list_1, my_list_2, list_length):
     """
     Divides corresponding elements of two lists and returns a new list.
-
     Args:
         my_list_1 (list): The first list.
         my_list_2 (list): The second list.
         list_length (int): The length of the lists.
-
     Returns:
         list: A new list containing the divisions of corresponding elements.
     """
@@ -29,6 +27,4 @@ def list_division(my_list_1, my_list_2, list_length):
             div = 0
         finally:
             new_list.append(div)
-
     return (new_list)
-
