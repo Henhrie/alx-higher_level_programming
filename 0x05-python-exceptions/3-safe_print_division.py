@@ -1,10 +1,23 @@
+
 #!/usr/bin/python3
 
 
 def safe_print_division(a, b):
+    """
+    Safely divides two numbers and prints the result.
+    
+    Args:
+        a: The numerator.
+        b: The denominator.
+    
+    Returns:
+        The division result.
+    """
     try:
-        result = a / b
+        div = a / b
     except (TypeError, ZeroDivisionError):
-        result = None
-    print(f"Result: {result}")
-    return result
+        div = None
+    finally:
+        print("Inside result:", div)
+    return (div)
+
