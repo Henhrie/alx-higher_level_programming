@@ -9,9 +9,14 @@ class Square:
         """teach python to print the square my way"""
         return self.pos_print()[:-1]
 
-def __init__(self, size=0, position=(0, 0)):
-    self.size = size
-    self.position = position
+    def __init__(self, size=0, position=(0, 0)):
+        """ initialize the square with this
+        Args:
+            size: a side of square
+            position: where the square is (coordinates)
+        """
+        self.size = size
+        self.position = position
 
     @property
     def size(self):

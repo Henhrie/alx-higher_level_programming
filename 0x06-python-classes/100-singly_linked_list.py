@@ -6,16 +6,14 @@
 class Node:
     """Represent a node in a singly-linked list."""
 
-def __init__(self, data, next_node=None):
-    """
-    Initialize a new Node.
-    
-    Args:
-        data (int): The data of the new Node.
-        next_node (Node): The next node of the new Node.
-    """
-    self.data = data
-    self.next_node = next_node
+    def __init__(self, data, next_node=None):
+        """Initialize a new Node.
+        Args:
+            data (int): The data of the new Node.
+            next_node (Node): The next node of the new Node.
+        """
+        self.data = data
+        self.next_node = next_node
 
     @property
     def data(self):
@@ -33,11 +31,11 @@ def __init__(self, data, next_node=None):
         """Get/set the next_node of the Node."""
         return (self.__next_node)
 
-@next_node.setter
-def next_node(self, value):
-    if value is not None and not isinstance(value, Node):
-        raise TypeError("next_node must be a Node object")
-    self.__next_node = value
+    @next_node.setter
+    def next_node(self, value):
+        if not isinstance(value, Node) and value is not None:
+            raise TypeError("next_node must be a Node object")
+        self.__next_node = value
 
 
 class SinglyLinkedList:
